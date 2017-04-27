@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2S-JG-W40">
+                                <rect key="frame" x="0.0" y="490" width="414" height="188"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Movie_Splash_Image.png" translatesAutoresizingMaskIntoConstraints="NO" id="dIX-tz-Ikh">
+                                        <rect key="frame" x="200" y="0.0" width="214" height="188"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dIX-tz-Ikh" secondAttribute="height" multiplier="107:94" id="sdT-xg-dru"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.6705882353" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dIX-tz-Ikh" firstAttribute="leading" secondItem="G2S-JG-W40" secondAttribute="leading" constant="200" id="5w0-RU-wiT"/>
+                                    <constraint firstAttribute="bottom" secondItem="dIX-tz-Ikh" secondAttribute="bottom" id="YPy-qO-hWI"/>
+                                    <constraint firstItem="dIX-tz-Ikh" firstAttribute="top" secondItem="G2S-JG-W40" secondAttribute="top" id="j26-M3-q7t"/>
+                                    <constraint firstAttribute="trailing" secondItem="dIX-tz-Ikh" secondAttribute="trailing" id="yD2-me-NAB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Movie Manager App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0k-77-xTT">
+                                <rect key="frame" x="0.0" y="86" width="414" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8TG-3d-FCg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="28"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.55294117649999996" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.019633507849999999" green="0.014141577149999999" blue="0.0017933882400000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="G2S-JG-W40" secondAttribute="trailing" id="1Gs-C2-kyW"/>
+                            <constraint firstAttribute="trailing" secondItem="A0k-77-xTT" secondAttribute="trailing" id="4F8-I1-IyN"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="G2S-JG-W40" secondAttribute="bottom" constant="58" id="7UC-vk-WOo"/>
+                            <constraint firstItem="A0k-77-xTT" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="66" id="9r4-h5-t84"/>
+                            <constraint firstItem="A0k-77-xTT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="FD8-zl-xap"/>
+                            <constraint firstItem="G2S-JG-W40" firstAttribute="top" secondItem="A0k-77-xTT" secondAttribute="bottom" constant="304" id="TSV-e8-7bV"/>
+                            <constraint firstItem="G2S-JG-W40" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="XB2-Ha-TZO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="374.18478260869568"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Movie_Splash_Image.png" width="285" height="235"/>
+    </resources>
+</document>
